@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 // sync test
-=======
 // message generator program.
 // runs a program > should get a new
 // randomized output
@@ -10,7 +8,14 @@ const randomize = () => {
   return Math.floor(Math.random() * 3);
 };
 
-let partOne = [];
-let partTwo = [];
-let partThree = [];
->>>>>>> ce97707ea1fc006d9a24aa51fa868e673c0668d8
+let sentOne = ['O Zézinho','A Maria','O Francisco'];
+let sentTwo = [' viajou a França', ' viajou a Itália', ' viajou a França'];
+let sentThree = [' o ano passado', ' à 5 anos atrás', ' a semana passada.'];
+
+const randomSentence = () =>
+{
+  return (sentOne[randomize()]+sentTwo[randomize()]+sentThree[randomize()]);
+}
+
+console.log(randomSentence)
+console.log(randomize)
